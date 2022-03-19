@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # An example hook script to verify what is about to be pushed.  Called by "git
 # push" after it has checked the remote status, but before anything has been
@@ -11,19 +11,25 @@
 #
 # If pushing without using a named remote those arguments will be equal.
 #
-# Information about the commits which are being pushed is supplied as lines to
-# the standard input in the form:
-#
-#   <local ref> <local sha1> <remote ref> <remote sha1>
-#
-# This sample shows how to prevent push of commits where the log message starts
-# with "WIP" (work in progress).
+# Performs static go linting on sources 
 
 remote="$1"
 url="$2"
 
-echo "Validating go source on push [/src]"
+echo -e "Performing linting on go sources..."
+printf "%0.s-" {1..100}
+echo
 
-docker run -v $(pwd)/src:/src bkstud/ebizness:latest ls /src
+cd Proj1
+docker run -v $(pwd)/src:/src bkstud/ebizness:latest /bin/bash -c '/root/go/bin/golangci-lint run $(find /src -type f)'
+output=$?
+printf "%0.s-" {1..100}
+if [ $output -ne 0 ]
+then
+	echo -en "\nLinting failed!"
+	echo
+	exit 1
+fi
 
+echo
 exit 0
