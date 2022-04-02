@@ -1,7 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/app/app/v1/post/PostRepository.scala:113:19: reassignment to val[0m
-[0m[[0m[31merror[0m] [0m[0m        out.title = post.title[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/app/app/v1/post/PostRepository.scala:114:18: reassignment to val[0m
-[0m[[0m[31merror[0m] [0m[0m        out.body = post.body[0m
-[0m[[0m[31merror[0m] [0m[0m                 ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
