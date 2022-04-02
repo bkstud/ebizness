@@ -1,0 +1,96 @@
+2022-04-02 16:00:13,283 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-4 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-04-02 16:00:13,291 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev) (no global state)
+2022-04-02 16:00:13,456 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:00:13,457 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - update: id = 2
+2022-04-02 16:00:13,480 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-7 - update: id = 2
+2022-04-02 16:00:13,481 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-7 - update: data = PostData(2,test,foo)
+2022-04-02 16:00:15,808 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:00:15,810 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - index: 
+2022-04-02 16:00:15,816 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-8 - list: 
+2022-04-02 16:00:44,360 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-4 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-04-02 16:00:44,363 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev) (no global state)
+2022-04-02 16:00:44,368 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:00:44,370 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - update: id = 3
+2022-04-02 16:00:44,374 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-7 - update: id = 3
+2022-04-02 16:00:44,379 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-7 - update: data = PostData(3,test,foo)
+2022-04-02 16:00:51,544 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:00:51,547 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - index: 
+2022-04-02 16:00:51,550 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-8 - list: 
+2022-04-02 16:02:38,616 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-17 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-04-02 16:02:38,620 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-17 - Application started (Dev) (no global state)
+2022-04-02 16:02:38,627 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-5 - invokeBlock: 
+2022-04-02 16:02:38,635 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-5 - index: 
+2022-04-02 16:02:38,646 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-6 - list: 
+2022-04-02 16:03:00,838 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-7 - invokeBlock: 
+2022-04-02 16:03:00,839 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-7 - process: 
+2022-04-02 16:03:00,845 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-8 - create: data = PostData(6,test,foo)
+2022-04-02 16:03:21,477 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-27 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-04-02 16:03:21,479 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-27 - Application started (Dev) (no global state)
+2022-04-02 16:03:21,486 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:03:21,486 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - process: 
+2022-04-02 16:03:21,498 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-7 - create: data = PostData(6,test,foo)
+2022-04-02 16:03:27,447 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:03:27,447 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - index: 
+2022-04-02 16:03:27,454 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-8 - list: 
+2022-04-02 16:03:57,593 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-31 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-04-02 16:03:57,596 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-31 - Application started (Dev) (no global state)
+2022-04-02 16:03:57,604 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:03:57,605 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - index: 
+2022-04-02 16:03:57,611 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-7 - list: 
+2022-04-02 16:04:04,576 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:04:04,576 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - update: id = 2
+2022-04-02 16:04:04,590 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-8 - update: id = 2
+2022-04-02 16:04:04,592 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-8 - update: data = PostData(2,test,foo)
+2022-04-02 16:04:05,878 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:04:05,879 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - index: 
+2022-04-02 16:04:05,883 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-9 - list: 
+2022-04-02 16:04:11,631 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:04:11,631 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - process: 
+2022-04-02 16:04:11,638 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-10 - create: data = PostData(6,test,foo)
+2022-04-02 16:04:13,308 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:04:13,309 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - index: 
+2022-04-02 16:04:13,313 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-11 - list: 
+2022-04-02 16:04:25,128 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:04:25,128 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - process: 
+2022-04-02 16:04:25,130 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-12 - create: data = PostData(7,test,foo)
+2022-04-02 16:04:26,551 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:04:26,552 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - index: 
+2022-04-02 16:04:26,555 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-13 - list: 
+2022-04-02 16:04:32,712 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:04:32,712 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - update: id = 2
+2022-04-02 16:04:32,715 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-14 - update: id = 2
+2022-04-02 16:04:32,716 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-14 - update: data = PostData(2,test11,foo)
+2022-04-02 16:04:34,188 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:04:34,188 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - index: 
+2022-04-02 16:04:34,189 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-16 - list: 
+2022-04-02 16:04:40,311 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:04:40,312 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - process: 
+2022-04-02 16:04:40,313 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-17 - create: data = PostData(8,test,foo)
+2022-04-02 16:04:41,664 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2022-04-02 16:04:41,665 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - index: 
+2022-04-02 16:04:41,667 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-18 - list: 
