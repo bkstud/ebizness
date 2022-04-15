@@ -12,7 +12,7 @@ import kotlinx.serialization.json.*
 
 
 @Serializable
-data class Verification(val type: String, val token: String, val challenge: String)
+data class Verification(val type: String, val token: String, val challenge: String = "")
 // @Serializable
 // data class Body(val body: Verification)
 
@@ -30,6 +30,12 @@ fun Application.configureSerialization() {
                 val json = call.receive<Verification>()
                 println(json)
                 call.respond(json.challenge)
-            }
+        }
+
+        post("/slack/ping") {
+                // val json = call.receive<Verification>()
+                println("pong")
+                call.respondText("pong")
+        }
     }
 }
