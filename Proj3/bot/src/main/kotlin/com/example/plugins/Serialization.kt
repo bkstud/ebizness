@@ -13,8 +13,7 @@ import kotlinx.serialization.json.*
 
 @Serializable
 data class Verification(val type: String, val token: String, val challenge: String = "")
-// @Serializable
-// data class Body(val body: Verification)
+
 
 fun Application.configureSerialization() {
     install(ContentNegotiation) {
@@ -24,18 +23,32 @@ fun Application.configureSerialization() {
             }
         )
     }
+    
+    val categories = mapOf("fruits" to arrayOf("banana", "apple", "orange"), 
+                           "vegetables" to arrayOf("salad", "onion", "potato", "broccoli"))
 
     routing {
         post("/slack/events") {
                 val json = call.receive<Verification>()
-                println(json)
                 call.respond(json.challenge)
         }
 
         post("/slack/ping") {
-                // val json = call.receive<Verification>()
-                println("pong")
                 call.respondText("pong")
+        }
+        
+        post("/slack/categories") {
+                call.respondText(categories.keys.joinToString())
+        }
+        
+        post("/slack/categories/list") {
+                val formParameters = call.receiveParameters()
+                println(formParameters)
+                val category = formParameters["text"].toString()
+                if(! categories.containsKey(category)) {
+                    call.respondText("Incorrect category: $category")    
+                }
+                call.respondText(categories.getValue(category).joinToString())
         }
     }
 }
