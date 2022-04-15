@@ -43,12 +43,12 @@ fun Application.configureSerialization() {
         
         post("/slack/categories/list") {
                 val formParameters = call.receiveParameters()
-                println(formParameters)
                 val category = formParameters["text"].toString()
                 if(! categories.containsKey(category)) {
                     call.respondText("Incorrect category: $category")    
-                }
-                call.respondText(categories.getValue(category).joinToString())
+                } else
+                    call.respondText(categories.getValue(category).joinToString())
+                
         }
     }
 }
