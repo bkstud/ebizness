@@ -6,6 +6,8 @@ import (
 
 type Purchase struct {
 	gorm.Model
-	UserId    uint
-	ProductId uint
+	ProductID  uint
+	Product    Product
+	CustomerID uint
+	Customer   Customer
 }
