@@ -1,4 +1,4 @@
-package main
+package database
 
 import (
 	"os"
@@ -8,7 +8,9 @@ import (
 	"gorm.io/gorm"
 )
 
-func db_init() {
+var Database *gorm.DB = nil
+
+func Init() {
 
 	if _, err := os.Stat("./test.db"); err == nil {
 		os.Remove("./test.db")
@@ -58,6 +60,8 @@ func db_init() {
 	db.Create(&s2)
 	db.Create(&s3)
 
+	Database = db
+
 	// db.Create(&models.Product{Code: "D43", Price: 100})
 
 	// // Read
@@ -73,5 +77,4 @@ func db_init() {
 
 	// // Delete - delete product
 	// db.Delete(&product, 1)
-	// return db
 }
