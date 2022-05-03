@@ -1,16 +1,15 @@
 import React, { useContext } from 'react';
 
-// import useBasket from '../hooks/useBasket';
 import ShopContext from "../contexts/ShopContext";
+import useBasket from '../hooks/useBasket';
 
 function Products(props) {
   const {products, useBasket} = useContext(ShopContext);
-  const {basket, addProduct, removeProduct} = useBasket
-  // const { basket, addProduct, removeProduct } = useBasket();
+  const addProduct = useBasket.addProduct
   return (
     <div>
       <div className="products">
-        Products:
+        <b>Products:</b>
         <table>
           <thead>
           <tr>

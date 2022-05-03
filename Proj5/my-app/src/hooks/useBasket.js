@@ -1,12 +1,17 @@
 
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import useApi from '../api/products'
 
 
-function useBasket() {
-  const {_, updateProducts} = useApi()
+function useBasket(props) {
+  const updateProducts = useApi().updateProducts
 
   const [basket, setBasket] = useState([]);
+  
+  useEffect(() => {
+    var initialBasket = props.products.filter(p => p.State === "basket")
+    setBasket(initialBasket)
+  }, [props.products]);
 
   function addProduct(product) {
     if(product.State === "basket" || product.State === "bought")
@@ -23,6 +28,7 @@ function useBasket() {
 
   function removeProduct(product, new_state="available") {
     product.State = new_state
+    console.log('remove:', product)
     const filteredProducts = basket.filter(p => product.Id !== p.Id)
     setBasket([...filteredProducts])
     updateProducts([product])
@@ -32,6 +38,7 @@ function useBasket() {
     basket,
     addProduct,
     removeProduct,
+    setBasket
   }
 }
 

@@ -1,13 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect} from 'react';
 import ShopContext from "../contexts/ShopContext";
 
 function Basket(props) {
   const {products, useBasket} = useContext(ShopContext);
-  const {basket, addProduct, removeProduct} = useBasket
+  const basket = useBasket.basket
+  
   return (
     <div>
       <div className="basket">
-        Basket:
+        <b>Basket:</b>
         <table>
           <thead>
           <tr>
@@ -21,7 +22,7 @@ function Basket(props) {
               (<tr key={id}>
                 <th>{p.Name}</th>
                 <th>{p.Price}</th>
-                <th><button onClick={() => removeProduct(p)}>Remove</button></th>
+                <th><button onClick={() => useBasket.removeProduct(p)}>Remove</button></th>
               </tr>
             ))}
           </tbody>

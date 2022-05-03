@@ -9,7 +9,9 @@ import Checkout from './components/Checkout';
 const App = () => (
   <ShopContextProvider>
     <Products />
+    <br></br>
     <Basket />
+    <br></br>
     <Checkout />
   </ShopContextProvider>
 );
