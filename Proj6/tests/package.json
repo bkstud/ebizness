@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^9.6.1"
+  },
+  "dependencies": {
+    "browserstack-cypress-cli": "^1.14.0"
   }
 }
